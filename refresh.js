@@ -20,7 +20,7 @@ async function generateAuthTicket(roblosecurityCookie) {
         const response = await axios.post("https://auth.roblox.com/v1/authentication-ticket", {}, {
             headers: {
                 "x-csrf-token": csrfToken,
-                "referer": "https://www.roblox.com/madebySynaptrixBitch",
+                "referer": "https://www.roblox.com/home",
                 'Content-Type': 'application/json',
                 'Cookie': `.ROBLOSECURITY=${roblosecurityCookie}`
             }
